@@ -26,7 +26,9 @@ public class BaseTest {
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("http://bbc.com");
         return driver;
+
     }
 
     @AfterClass
